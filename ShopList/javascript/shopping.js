@@ -104,7 +104,7 @@ var child = document.getElementById("shopList");
 //hämta och sätt parent elementet till childen
 var parent = child.parentNode;
 //här sätter jag ny bakgrundsfärg på parent-elementet parent
-parent.style.backgroundColor = "#ced8dc";
+parent.style.backgroundColor = "#f8f9fa";
 
 }
 //kör newBackgroundStyle

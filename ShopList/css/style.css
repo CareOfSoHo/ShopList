@@ -1,7 +1,10 @@
 *{
     box-sizing: border-box;
 }
-
+ul.navbar-nav.mr-auto .close
+{
+  display: none;
+}
 body{
     padding: 0;
     margin: 0;
@@ -9,10 +12,6 @@ body{
 .header_title_container
 {
     text-align: center;
-}
-ul.navbar-nav.mr-auto .close
-{
-  display: none;
 }
 .left {
     float: left;
@@ -52,7 +51,7 @@ ul {
   }
   
   /* Style the list items */
-  ul li.liShop {
+  ul#shopList li.liShop {
     cursor: pointer;
     position: relative;
     padding: 12px 8px 12px 40px;
@@ -69,24 +68,24 @@ ul {
   }
   
   /* Set all odd list items to a different color (zebra-stripes) */
-  ul li.liShop:nth-child(odd) {
-    background: #f9f9f9;
+  ul#shopList li.liShop:nth-child(odd) {
+    background: darkgray;
   }
   
   /* Darker background-color on hover */
-  ul li.liShop:hover {
+  ul#shopList li.liShop:hover {
     background: #ddd;
   }
   
   /* When clicked on, add a background color and strike out text */
-  ul li.liShop.checked {
+  ul#shopList li.liShop.checked {
     background: #888;
     color: #fff;
     text-decoration: line-through;
   }
   
   /* Add a "checked" mark when clicked on */
-  ul li.liShop.checked::before {
+  ul#shopList li.liShop.checked::before {
     content: '';
     position: absolute;
     border-color: #fff;
@@ -108,7 +107,7 @@ ul {
   }
   
   .close:hover {
-    background-color: orange;
+    background-color:rgb(139, 132, 117);
     color: white;
   }  
 .right {
